@@ -8,7 +8,7 @@ from esphome.components.esp32 import add_idf_component
 from .. import homekit_base
 
 AUTO_LOAD = ["homekit_base"]
-DEPENDENCIES = ['esp32', 'network', 'homekit_base']
+DEPENDENCIES = ['esp32', 'homekit_base']
 CODEOWNERS = ["@rednblkx"]
 
 homekit_ns = homekit_base.homekit_ns
