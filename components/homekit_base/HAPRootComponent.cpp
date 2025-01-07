@@ -29,7 +29,7 @@ namespace esphome
             this->accessory_info.swap(merged_info);
             hap_acc_t* accessory;
             /* Initialize the HAP core */
-            hap_init(HAP_TRANSPORT_WIFI);
+            //hap_init(HAP_TRANSPORT_WIFI);
 
             /* Initialise the mandatory parameters for Accessory which will be added as
             * the mandatory services internally
@@ -64,7 +64,7 @@ namespace esphome
             hap_acc_add_product_data(accessory, product_data, sizeof(product_data));
 
             /* Add Wi-Fi Transport service required for HAP Spec R16 */
-            hap_acc_add_wifi_transport_service(accessory, 0);
+            //hap_acc_add_wifi_transport_service(accessory, 0);
 
             /* Add the Accessory to the HomeKit Database */
             hap_add_accessory(accessory);
