@@ -6,7 +6,7 @@ from esphome.core import ID, Lambda
 from esphome.components.esp32 import add_idf_component, add_idf_sdkconfig_option
 import re
 
-DEPENDENCIES = ['esp32', 'network']
+DEPENDENCIES = ['esp32']
 CODEOWNERS = ["@rednblkx"]
 MULTI_CONF = True
 
